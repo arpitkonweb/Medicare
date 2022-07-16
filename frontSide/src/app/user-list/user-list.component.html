@@ -1,0 +1,37 @@
+<br><br><br>
+<div style="text-align:right ;">
+<button (click)= "dashboard()" class="btn" style="margin-top: 10px; background-color: rgb(0, 153, 255);">Admin Panel</button>
+</div>
+<div style="text-align:center ;">
+<h1>User List</h1>
+</div>
+
+<button (click)= "onAddUser()" class="btn btn-primary pull left">Add Users</button> <br><br>
+
+<table class="table table-striped table-bordered">
+
+<thead>
+<tr>
+    <th>Id</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>PhoneNo</th>
+    <th>Action</th>
+</tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let dr of drs;let index = index">
+        <td>{{index+1}}</td>
+        <td>{{dr.firstname}}</td>
+        <td>{{dr.lastname}}</td>
+        <td>{{dr.phoneno}}</td>
+        <td ><button (click)="ondelete(dr.id)" class="btn btn-danger"> <i class="glyphicon glyphicon-trash"></i></button>
+        <button class="btn btn-warning" style="margin-left: 10px;"> <i class="glyphicon glyphicon-pencil"></i></button></td>
+    </tr>
+
+
+</tbody>
+
+
+</table>

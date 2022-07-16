@@ -1,0 +1,79 @@
+
+<div class="myclass">
+
+ <nav id="myid" class="navbar navbar-dark bg-primary navbar-fixed-top" style="background-color: #189ada;height: 50px;">
+
+ 
+  <!-- <form id="page" class="form-inline"> -->
+   
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#home">
+            <img src="/assets/images/Medicare_logo.png" alt="logo" class="logo" type="icon"   height="90"
+               loading="lazy"
+            style="margin-top: -1px; border: 5px solid #189ada;"/>
+          </a>
+        </li>
+         
+          <li (click)="onLogin()" *ngIf="!isLoggedIn"><a routerLink="/Userlogin" class="hello" href="#">Login</a></li>
+          
+          <li *ngIf="isLoggedIn" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">{{username}}<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a  href="#1">Profile</a></li>
+              <li><a routerLink="/MRlogin/orders" href="#2">Orders</a></li>
+              <li><a (click)="onLogout()" >Logout</a></li>
+            </ul>
+          </li>
+
+          
+          <li ><a routerLink="/MRlogin/cart" class="hello" > Cart</a></li>
+          <!-- <li ><a routerLink="/login" class="hello" href="#">Admin</a></li> -->
+         <li> 
+          <input [(ngModel)]="search" name="search" size="40" style="margin-top: 11px" class="form-control mr-sm-2" type="search" placeholder="Search Medicine" aria-label="search" >
+         </li>
+         <li>
+          <button (click)="onSearch()" style="margin-top: 11px; margin-left: 5px; background-color:rgb(241, 242, 246); text-decoration-color: black;" class="btn btn-info" type="submit"><a href="MRlogin/search">Search</a> </button>
+         </li>
+        </ul>
+     
+
+</nav>   
+ 
+
+<router-outlet></router-outlet>  
+
+<br><br>
+
+
+      
+<div class="row">
+              <div class="col-md-12">
+               
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+
+<div class="container">
+    <hr>
+        <div class="text-center center-block">
+            <p class="txt-railway">- Contact us -</p>
+            <br />
+                <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <!-- <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a> -->
+	            <a href="mailto:arpitkonweb@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+</div>
+    <hr>
+</div>
+
+<br /> 
+
+</div>
+ 
+              
+              </div>
+
+</div>
+
+
+

@@ -1,0 +1,42 @@
+<br><br><br>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="login">
+  
+<h1>Login</h1>
+<div class="form-group">
+<label for="">Email</label>
+<input [(ngModel)]="email" type="text" class="form-control">
+</div>
+
+<div class="form-group">
+<label for="">Password</label>
+<input [(ngModel)]="password" type="text" class="form-control">    
+</div>
+
+<div class="form-group">
+       <div class="checkbox">
+           <label>
+             <input [(ngModel)]="rememberme" type="checkbox"> Remember me ?
+           </label>
+         </div>
+   </div>
+
+<div class="form-group">
+<button (click)="onlogin()" class="btn btn-primary">Submit</button>  <button class='btn btn-primary'style="margin-left: 265px;" routerLink="/UserRegister">SignUp</button>     
+<br><br>
+<a style="color: rgb(19, 31, 155); font-family: 'Times New Roman', Times, serif; border: 1px solid black " href="/login">Admin</a>
+</div>
+</div>   
+
+
+</div>
+<div class="col-md-4"></div>
+
+</div> 
+
+
+
+
+

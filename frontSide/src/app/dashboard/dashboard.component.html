@@ -1,0 +1,19 @@
+
+<br><br><br>
+<div style="text-align: center;  color: rgb(18, 19, 19);">
+<h1>Admin Panel</h1>
+</div>
+
+
+
+<div style="text-align: center;">
+       <table style="width: 50%; text-align: center; margin-left: 25%;">
+
+       <tr> <mat-card style="background-color: rgb(24, 101, 173); margin-top: 2%;"><a routerLink="/login/dashboard/userlist" class="list-group-item">Users Details</a></mat-card></tr>
+          
+       <tr><mat-card style="background-color: rgb(24, 101, 173);  margin-top: 2%;"><a routerLink = "/login/dashboard/product" class="list-group-item">Products Details</a> </mat-card> </tr>
+       <tr><mat-card style="background-color: rgb(24, 101, 173);  margin-top: 2%; margin-bottom:5% ;"><a routerLink = "/MRlogin/dashboard/orders" class="list-group-item">Orders Details</a> </mat-card></tr>
+       <tr><a> <button (click)="onlogout()" class="btn btn-warning" style="margin-top: 2%;">Logout</button> </a> </tr>
+
+</table>
+</div>
